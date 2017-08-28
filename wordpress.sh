@@ -30,7 +30,7 @@ dbpassword='password_here'
 dbname='database_name_here'
 dbhost='localhost'
 usr='santosh'
-pw='Qwerty@12345'
+pw='12345'
 db='wordpress'
 hst='192.168.20.20'
 
