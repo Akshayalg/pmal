@@ -32,7 +32,7 @@ dbhost='localhost'
 usr='santosh'
 pw='Qwerty@12345'
 db='wordpress'
-hst='10.0.1.4'
+hst='192.168.20.20'
 
 sudo sed -i /var/www/html/wp-config.php  -e "s/${dbuser}/${usr}/g" /var/www/html/wp-config.php
 sudo sed -i /var/www/html/wp-config.php -e "s/${dbpassword}/${pw}/g" /var/www/html/wp-config.php
