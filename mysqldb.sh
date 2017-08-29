@@ -25,10 +25,10 @@ sudo sed -i "s/.*bind-address.*/bind-address = 192.168.20.20/" /etc/mysql/my.cnf
 sudo mysql -u root -p${mysqlPassword}  -e "CREATE DATABASE ${db};"
 
 #setting password for remote login from LAP vm
-sudo mysql -u root -e "set password for 'santosh'@'192.168.10.10' = PASSWORD('$mysqlPassword')"
+sudo mysql -u root -e "set password for 'akshay'@'192.168.10.10' = PASSWORD('$mysqlPassword')"
 
 #Granting permision to remote login
-sudo mysql -u root -p${mysqlPassword} -e "GRANT ALL PRIVILEGES ON ${db}.* TO santosh@'192.168.10.10' IDENTIFIED BY '${mysqlPassword}';"
+sudo mysql -u root -p${mysqlPassword} -e "GRANT ALL PRIVILEGES ON ${db}.* TO akshay@'192.168.10.10' IDENTIFIED BY '${mysqlPassword}';"
 
 #Restarting the mysql server
 sudo service mysql restart
